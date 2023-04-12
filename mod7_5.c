@@ -1,5 +1,6 @@
 // Module 7.5: Practice Day 02
 
+// practice problem 1
 #include<stdio.h>
 
 int main()
@@ -20,4 +21,34 @@ int main()
   }else{
     printf("%lld\n",sum);
   }
+}
+
+//---------------------------
+// practice problem 3 
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>0)
+        {
+            printf("1 ");
+        }else if(arr[i]<0)
+        {
+            printf("2 ");
+        }else
+        {
+            printf("0 ");
+        }
+    }
+    return 0;
 }
