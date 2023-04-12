@@ -22,6 +22,33 @@ int main()
     printf("%lld\n",sum);
   }
 }
+// ------------------
+// practice problem 2
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    int x;
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&x);
+    int answer=-1;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==x){
+            answer = i;
+            break;
+        }
+    }
+    printf("%d\n",answer);
+    return 0;
+}
 
 //---------------------------
 // practice problem 3 
