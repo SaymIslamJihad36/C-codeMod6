@@ -544,3 +544,26 @@ int main()
     printf("Total negative number of this array is : %d\n",count);
     return 0;
 }
+
+
+// 17) Write a C program to copy all elements from an array to another array. And print them in reverse way.
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    int copy[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=n-1;i>=0;i--)
+    {
+        copy[i]=arr[i];
+        printf("%d ",copy[i]);
+    }
+    return 0;
+}
