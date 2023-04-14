@@ -496,7 +496,7 @@ int main()
 }
 
 
-// Write a C program to count total number of even and odd elements in an array.
+// 15) Write a C program to count total number of even and odd elements in an array.
 #include<stdio.h>
 
 int main()
@@ -521,5 +521,26 @@ int main()
     }
     printf("The number of even number is : %d\n",countev);
     printf("The number of odd number is : %d\n",countodd);
+    return 0;
+}
+
+// 16) Write a C program to count total number of negative elements in an array.
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    int count = 0;
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+        if(arr[i]<0)
+        {
+            count++;
+        }
+    }
+    printf("Total negative number of this array is : %d\n",count);
     return 0;
 }
